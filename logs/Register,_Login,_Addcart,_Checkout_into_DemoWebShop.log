@@ -1,0 +1,256 @@
+2026-03-29 10:20:25 INFO  [main] BaseClass - Browser going to start
+2026-03-29 10:20:42 INFO  [main] BaseClass - Chrome browser started successfully
+2026-03-29 10:20:42 INFO  [main] BaseClass - Browser maximized
+2026-03-29 10:20:49 INFO  [main] BaseClass - URL hit successfully
+2026-03-29 10:20:49 INFO  [main] BaseClass - User navigated to demowebshop
+2026-03-29 10:20:49 INFO  [main] BaseClass - User verified the demowebshop logo successfully
+2026-03-29 10:20:50 INFO  [main] BaseClass - Register link clicked
+2026-03-29 10:20:50 INFO  [main] BaseClass - User navigated to register page
+2026-03-29 10:20:53 INFO  [main] BaseClass - Register button clicked
+2026-03-29 10:20:54 INFO  [main] BaseClass - Registered successfully
+2026-03-29 10:20:55 INFO  [main] BaseClass - Logout link clicked
+2026-03-29 10:20:57 INFO  [main] BaseClass - Login link clicked
+2026-03-29 10:20:57 INFO  [main] BaseClass - Navigated to login page
+2026-03-29 10:20:59 INFO  [main] BaseClass - Login button clicked
+2026-03-29 10:20:59 INFO  [main] BaseClass - Login successfully
+2026-03-29 10:20:59 INFO  [main] BaseClass - Selecting cellphones from electronics link
+2026-03-29 10:21:01 INFO  [main] BaseClass - Navigated to cellphone page
+2026-03-29 10:21:01 INFO  [main] BaseClass - Addtocart button clicked
+2026-03-29 10:21:02 INFO  [main] BaseClass - Shoppingcart popup message validated
+2026-03-29 10:21:03 INFO  [main] BaseClass - Shoppingcart link clicked
+2026-03-29 10:22:14 INFO  [main] BaseClass - Verified product details [{=, Product(s)=Smartphone, Price=100.00, Total=100.00, Remove=6480147, Qty.=1}]
+2026-03-29 10:22:14 INFO  [main] BaseClass - Product table total actual vs expected matched
+2026-03-29 10:22:17 INFO  [main] BaseClass - Expected total 200.0 fulfilled
+2026-03-29 10:22:19 INFO  [main] BaseClass - Estimate shipping button clicked
+2026-03-29 10:22:19 INFO  [main] BaseClass - Verified the product total price
+2026-03-29 10:22:19 INFO  [main] BaseClass - Terms services clicked
+2026-03-29 10:22:21 INFO  [main] BaseClass - Checkout button clicked
+2026-03-29 10:22:21 INFO  [main] BaseClass - User navigated to checkout page
+2026-03-29 10:22:23 INFO  [main] BaseClass - Browser quit successfully
+2026-03-29 10:24:17 INFO  [main] BaseClass - Browser going to start
+2026-03-29 10:24:26 INFO  [main] BaseClass - Chrome browser started successfully
+2026-03-29 10:24:26 INFO  [main] BaseClass - Browser maximized
+2026-03-29 10:24:29 INFO  [main] BaseClass - URL hit successfully
+2026-03-29 10:24:29 INFO  [main] BaseClass - User navigated to demowebshop
+2026-03-29 10:24:29 INFO  [main] BaseClass - User verified the demowebshop logo successfully
+2026-03-29 10:24:30 INFO  [main] BaseClass - Register link clicked
+2026-03-29 10:24:30 INFO  [main] BaseClass - User navigated to register page
+2026-03-29 10:24:32 INFO  [main] BaseClass - Register button clicked
+2026-03-29 10:24:33 INFO  [main] BaseClass - Registered successfully
+2026-03-29 10:24:35 INFO  [main] BaseClass - Logout link clicked
+2026-03-29 10:24:36 INFO  [main] BaseClass - Login link clicked
+2026-03-29 10:24:36 INFO  [main] BaseClass - Navigated to login page
+2026-03-29 10:24:37 INFO  [main] BaseClass - Login button clicked
+2026-03-29 10:24:37 INFO  [main] BaseClass - Login successfully
+2026-03-29 10:24:37 INFO  [main] BaseClass - Selecting cellphones from electronics link
+2026-03-29 10:24:40 INFO  [main] BaseClass - Navigated to cellphone page
+2026-03-29 10:24:40 INFO  [main] BaseClass - Addtocart button clicked
+2026-03-29 10:24:40 INFO  [main] BaseClass - Shoppingcart popup message validated
+2026-03-29 10:24:41 INFO  [main] BaseClass - Shoppingcart link clicked
+2026-03-29 10:25:52 INFO  [main] BaseClass - Verified product details [{=, Product(s)=Smartphone, Price=100.00, Total=100.00, Remove=6480153, Qty.=1}]
+2026-03-29 10:25:52 INFO  [main] BaseClass - Product table total actual vs expected matched
+2026-03-29 10:25:55 INFO  [main] BaseClass - Expected total 200.0 fulfilled
+2026-03-29 10:25:57 INFO  [main] BaseClass - Estimate shipping button clicked
+2026-03-29 10:25:58 INFO  [main] BaseClass - Verified the product total price
+2026-03-29 10:25:58 INFO  [main] BaseClass - Terms services clicked
+2026-03-29 10:26:00 INFO  [main] BaseClass - Checkout button clicked
+2026-03-29 10:26:00 INFO  [main] BaseClass - User navigated to checkout page
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - Workbook (readfile) created with reclen=432
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - exit create workbook from existing file function
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords called
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords exit
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161526
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 14ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161542
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 0ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161543
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 2ms
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - Workbook (readfile) created with reclen=432
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - exit create workbook from existing file function
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords called
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords exit
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161556
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 0ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161557
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161560
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - Workbook (readfile) created with reclen=432
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - exit create workbook from existing file function
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords called
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords exit
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161584
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 2ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161587
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161594
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 2ms
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - Workbook (readfile) created with reclen=432
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - exit create workbook from existing file function
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords called
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords exit
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161612
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161614
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161617
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - Workbook (readfile) created with reclen=432
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - exit create workbook from existing file function
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords called
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords exit
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161629
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 2ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161634
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161636
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 10ms
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - Workbook (readfile) created with reclen=432
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - exit create workbook from existing file function
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords called
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords exit
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161662
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 3ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161666
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161668
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 0ms
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - Workbook (readfile) created with reclen=432
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - exit create workbook from existing file function
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords called
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords exit
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161685
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 2ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161687
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161692
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 0ms
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - Workbook (readfile) created with reclen=432
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - exit create workbook from existing file function
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords called
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords exit
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161710
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161719
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 3ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161723
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - Workbook (readfile) created with reclen=432
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - exit create workbook from existing file function
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords called
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords exit
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161732
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 3ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161738
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 0ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161740
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 0ms
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - Workbook (readfile) created with reclen=432
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - exit create workbook from existing file function
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords called
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords exit
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161751
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161753
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161755
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 0ms
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - Workbook (readfile) created with reclen=432
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - exit create workbook from existing file function
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords called
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords exit
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161765
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 5ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161770
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161771
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - Workbook (readfile) created with reclen=432
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - exit create workbook from existing file function
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords called
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords exit
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161793
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161795
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 0ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161795
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 1ms
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - Workbook (readfile) created with reclen=432
+2026-03-29 10:26:01 DEBUG [main] InternalWorkbook - exit create workbook from existing file function
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords called
+2026-03-29 10:26:01 DEBUG [main] HSSFWorkbook - convertLabelRecords exit
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161810
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 2ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161838
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 0ms
+2026-03-29 10:26:01 DEBUG [main] InternalSheet - sheet createSheet (existing file) exited
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - Time at start of cell creating in HSSF sheet = 1774760161839
+2026-03-29 10:26:01 DEBUG [main] HSSFSheet - total sheet cell creation took 0ms
+2026-03-29 10:26:01 INFO  [main] BaseClass - Firstname already fetched
+2026-03-29 10:26:01 INFO  [main] BaseClass - Lastname already fetched
+2026-03-29 10:26:02 INFO  [main] BaseClass - Email entered
+2026-03-29 10:26:02 INFO  [main] BaseClass - Company entered
+2026-03-29 10:26:02 INFO  [main] BaseClass - Country entered
+2026-03-29 10:26:03 INFO  [main] BaseClass - State entered
+2026-03-29 10:26:04 INFO  [main] BaseClass - City entered
+2026-03-29 10:26:04 INFO  [main] BaseClass - Address1 entered
+2026-03-29 10:26:04 INFO  [main] BaseClass - Address2 entered
+2026-03-29 10:26:05 INFO  [main] BaseClass - Zipcode entered
+2026-03-29 10:26:05 INFO  [main] BaseClass - Phone no entered
+2026-03-29 10:26:05 INFO  [main] BaseClass - Fax no entered
+2026-03-29 10:26:05 INFO  [main] BaseClass - Billing address completed
+2026-03-29 10:26:05 INFO  [main] BaseClass - Selecting shipping address
+2026-03-29 10:26:07 INFO  [main] BaseClass - Shipping address completed
+2026-03-29 10:26:07 INFO  [main] BaseClass - Selecting shipping method
+2026-03-29 10:26:08 INFO  [main] BaseClass - Shipping method completed
+2026-03-29 10:26:08 INFO  [main] BaseClass - Selecting payment method
+2026-03-29 10:26:09 INFO  [main] BaseClass - Payment method completed
+2026-03-29 10:26:09 INFO  [main] BaseClass - Getting payment information details
+2026-03-29 10:26:09 INFO  [main] BaseClass - Cash payment information successfully
+2026-03-29 10:26:10 INFO  [main] BaseClass - Payment information completed
+2026-03-29 10:26:10 INFO  [main] BaseClass - Verfying billing and shipping address
+2026-03-29 10:26:12 INFO  [main] BaseClass - Billing address captured
+2026-03-29 10:26:12 INFO  [main] BaseClass - Shipping address captured
+2026-03-29 10:26:13 INFO  [main] BaseClass - Verified the product total and total price
+2026-03-29 10:26:13 INFO  [main] BaseClass - Confirm order completed
+2026-03-29 10:26:15 INFO  [main] BaseClass - Ordered success
+2026-03-29 10:26:15 INFO  [main] BaseClass - User clicked continue button after ordered
+2026-03-29 10:26:17 INFO  [main] BaseClass - Browser quit successfully

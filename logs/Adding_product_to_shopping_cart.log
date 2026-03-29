@@ -1,0 +1,21 @@
+2026-03-29 09:00:18 INFO  [main] BaseClass - Browser going to start
+2026-03-29 09:00:25 INFO  [main] BaseClass - Chrome browser started successfully
+2026-03-29 09:00:25 INFO  [main] BaseClass - Browser maximized
+2026-03-29 09:00:31 INFO  [main] BaseClass - URL hit successfully
+2026-03-29 09:00:32 INFO  [main] BaseClass - Login link clicked
+2026-03-29 09:00:32 INFO  [main] BaseClass - Navigated to login page
+2026-03-29 09:00:34 INFO  [main] BaseClass - Login button clicked
+2026-03-29 09:00:34 INFO  [main] BaseClass - Login successfully
+2026-03-29 09:00:35 INFO  [main] BaseClass - Selecting cellphones from electronics link
+2026-03-29 09:00:37 INFO  [main] BaseClass - Navigated to cellphone page
+2026-03-29 09:00:37 INFO  [main] BaseClass - Addtocart button clicked
+2026-03-29 09:00:37 INFO  [main] BaseClass - Shoppingcart popup message validated
+2026-03-29 09:00:39 INFO  [main] BaseClass - Shoppingcart link clicked
+2026-03-29 09:01:50 INFO  [main] BaseClass - Verified product details [{=, Product(s)=Smartphone, Price=100.00, Total=100.00, Remove=6480063, Qty.=1}]
+2026-03-29 09:01:50 INFO  [main] BaseClass - Product table total actual vs expected matched
+2026-03-29 09:01:52 INFO  [main] BaseClass - Expected total 200.0 fulfilled
+2026-03-29 09:01:55 INFO  [main] BaseClass - Estimate shipping button clicked
+2026-03-29 09:01:56 INFO  [main] BaseClass - Verified the product total price
+2026-03-29 09:01:56 INFO  [main] BaseClass - Terms services clicked
+2026-03-29 09:01:58 INFO  [main] BaseClass - Checkout button clicked
+2026-03-29 09:01:59 INFO  [main] BaseClass - Browser quit successfully

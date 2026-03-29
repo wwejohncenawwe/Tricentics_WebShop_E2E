@@ -1,0 +1,10 @@
+2026-03-29 08:58:45 INFO  [main] BaseClass - Browser going to start
+2026-03-29 08:58:52 INFO  [main] BaseClass - Chrome browser started successfully
+2026-03-29 08:58:53 INFO  [main] BaseClass - Browser maximized
+2026-03-29 08:58:56 INFO  [main] BaseClass - URL hit successfully
+2026-03-29 08:58:57 INFO  [main] BaseClass - Register link clicked
+2026-03-29 08:58:57 INFO  [main] BaseClass - User navigated to register page
+2026-03-29 08:59:00 INFO  [main] BaseClass - Register button clicked
+2026-03-29 08:59:02 INFO  [main] BaseClass - Registered successfully
+2026-03-29 08:59:03 INFO  [main] BaseClass - Logout link clicked
+2026-03-29 08:59:04 INFO  [main] BaseClass - Browser quit successfully
