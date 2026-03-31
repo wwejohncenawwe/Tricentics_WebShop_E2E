@@ -9,7 +9,12 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features",
 							glue = {"stepdefinition","hooks"}, dryRun = false, monochrome = true,
-				 plugin = ("pretty"),tags= "@DemoWebShop_End_to_End_TestCase")
+				 plugin = {"pretty",
+						 	"html:target/cucumber-report.html",
+					        "json:target/cucumber.json",
+					        "junit:target/cucumber.xml",
+						   "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+						   "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},tags= "@DemoWebShop_End_to_End_TestCase")
 public class TestRunnerTest {
 
 

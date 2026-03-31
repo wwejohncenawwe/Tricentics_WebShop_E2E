@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import base.BaseClass;
+import hooks.Hooks;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -34,6 +35,7 @@ public class End_to_End_TC extends BaseClass{
 		String title =	getTitle();
 		Assert.assertEquals(title,"Demo Web Shop");
 		logger.info("User navigated to demowebshop");
+		Hooks.test.info("User navigated to demowebshop");
 	}
 
 	@Then("User should verify the demowebshop logo in the homepage")
@@ -41,12 +43,14 @@ public class End_to_End_TC extends BaseClass{
 		boolean logo = page.getHomePage().getHomepage_logo().isDisplayed();
 		Assert.assertTrue(logo);
 		logger.info("User verified the demowebshop logo successfully");
+		Hooks.test.pass("User verified the demowebshop logo successfully");
 	}
 
 	@Given("User click on register link")
 	public void user_click_on_register_link() {
 		button(page.getHomePage().getRegister_link());
 		logger.info("Register link clicked");
+		Hooks.test.pass("Register link clicked");
 	}
 
 	@Then("User navigate to demowebshop register page")
@@ -54,6 +58,7 @@ public class End_to_End_TC extends BaseClass{
 		String header = page.getRegisterPage().getRegisterpage_header().getText();
 		Assert.assertEquals("User navigated to register page","Register",header);
 		logger.info("User navigated to register page");
+		Hooks.test.info("User navigated to register page");
 	}
 
 	@When("User enters valid data {string},{string},{string},{string},{string} for registration details")
@@ -65,12 +70,14 @@ public class End_to_End_TC extends BaseClass{
 		type(page.getRegisterPage().getRegister_emilid(),email);
 		type(page.getRegisterPage().getRegister_password(),pass);
 		type(page.getRegisterPage().getConfirm_password(),cpass);
+		Hooks.test.info("Entered valid register details");
 	}
 
 	@When("User click on register button")
 	public void user_click_on_register_button() {
 		button(page.getRegisterPage().getRegister_btn());
 		logger.info("Register button clicked");
+		Hooks.test.info("Register button clicked");
 	}
 
 	@Then("User should verify success register status {string}")
@@ -78,12 +85,14 @@ public class End_to_End_TC extends BaseClass{
 		if(isAlertPresent()) {
 			driver.switchTo().alert().accept();
 			logger.info("Navigated to alert");
+			Hooks.test.info("Navigated to alert");
 		}
 		else if(page.getRegisterPage().getRegister_successmsg().isDisplayed()) {
 			String reister_successmsg = page.getRegisterPage().getRegister_successmsg().getText();
 			Assert.assertEquals(reister_successmsg,status1);
 			button(page.getRegisterPage().getRegister_continuebtn());
 			logger.info("Registered successfully");
+			Hooks.test.pass("Registered successfully");
 		}else {
 			logger.error("Register failed " + status1 + " not displayed");
 			Assert.assertTrue(false);
@@ -94,12 +103,14 @@ public class End_to_End_TC extends BaseClass{
 	public void user_click_logout_link() {
 		button(page.getHomePage().getLogout());
 		logger.info("Logout link clicked");
+		Hooks.test.info("Logout link clicked");
 	}
 
 	@Given("User click on login link")
 	public void user_click_on_login_link() {
 		button(page.getHomePage().getLogin_link());
 		logger.info("Login link clicked");
+		Hooks.test.info("Login link clicked");
 	}
 
 	@Then("User navigate to demowebshop login page")
@@ -107,6 +118,7 @@ public class End_to_End_TC extends BaseClass{
 		String login_head = page.getLoginPage().getLogin_header().getText();
 		Assert.assertEquals("User navigated to login page","Welcome, Please Sign In!",login_head );
 		logger.info("Navigated to login page");
+		Hooks.test.info("Navigated to login page");
 	}
 
 	@When("User enters the valid  {string},{string}")
@@ -114,12 +126,14 @@ public class End_to_End_TC extends BaseClass{
 		logger.debug("Entering valid email and password");
 		type(page.getLoginPage().getLogin_emilid(),email);
 		type(page.getLoginPage().getLogin_password(),pword);
+		Hooks.test.info("Entered valid login details");
 	}
 
 	@When("User click on login button")
 	public void user_click_on_login_button() {
 		button(page.getLoginPage().getLogin_btn());
 		logger.info("Login button clicked");
+		Hooks.test.info("Login button clicked");
 	}
 
 	@Then("User should verify login status {string}")
@@ -128,6 +142,7 @@ public class End_to_End_TC extends BaseClass{
 			String login_success = page.getLoginPage().getLogin_account_email().getText();
 			Assert.assertEquals(string2, login_success);
 			logger.info("Login successfully");
+			Hooks.test.pass("Login successfully");
 		}else {
 			logger.error("Login failed " + string2 + " not displayed");
 			Assert.assertTrue(false);
@@ -142,6 +157,7 @@ public class End_to_End_TC extends BaseClass{
 		wait.until(ExpectedConditions.visibilityOf(page.getCartPage().getCell_phones()));
 		mouse_action(page.getCartPage().getCell_phones());
 		button(page.getCartPage().getCell_phones());
+		Hooks.test.info("Selected cellphones from electronics link");
 	}
 
 	@Then("User navigate to demowebshop cell phones page")
@@ -152,6 +168,7 @@ public class End_to_End_TC extends BaseClass{
 			String cell_phones = page.getCartPage().getCell_phones_head().getText();
 			Assert.assertEquals(status,cell_phones);
 			logger.info("Navigated to cellphone page");
+			Hooks.test.info("Navigated to cellphone page");
 		}else {
 			logger.error("Cellphone page failed " + status + " not displayed");
 			Assert.assertTrue(false);
@@ -163,6 +180,7 @@ public class End_to_End_TC extends BaseClass{
 		if(page.getCartPage().getAddcart_btn().isDisplayed()) {
 			button(page.getCartPage().getAddcart_btn());
 			logger.info("Addtocart button clicked");
+			Hooks.test.pass("Addtocart button clicked");
 		}else {
 			logger.error("Addtocart failed not displayed");
 			Assert.assertTrue(false);
@@ -177,6 +195,7 @@ public class End_to_End_TC extends BaseClass{
 			String cart_popup = page.getCartPage().getAddedto_cart_popup().getText();
 			Assert.assertEquals(status,cart_popup);
 			logger.info("Shoppingcart popup message validated");
+			Hooks.test.pass("Shoppingcart popup message validated");
 		}else {
 			logger.error("Shoppingcart popup failed " + status + " not displayed");
 			Assert.assertTrue(false);
@@ -187,6 +206,7 @@ public class End_to_End_TC extends BaseClass{
 	public void user_click_on_shopping_cart_link() {
 		button(page.getHomePage().getShoppingcart_link());
 		logger.info("Shoppingcart link clicked");
+		Hooks.test.pass("Shoppingcart link clicked");
 	}
 
 	@Then("User should verify the product name,quantity and total")
@@ -234,6 +254,7 @@ public class End_to_End_TC extends BaseClass{
 				Assert.assertEquals(actualTotal, expectedTotal, 0.01);
 			}
 			logger.info("Product table total actual vs expected matched");
+			Hooks.test.info("Product table total actual vs expected matched");
 		}
 	}
 
@@ -258,6 +279,7 @@ public class End_to_End_TC extends BaseClass{
 		if(expectedTotal == total){
 			assertTrue(true);
 			logger.info("Expected total " + expectedTotal + " fulfilled");
+			Hooks.test.info("Expected total " + expectedTotal + " fulfilled");
 		}else {
 			logger.error("Expected total failed");
 			assertTrue(false);
@@ -282,6 +304,7 @@ public class End_to_End_TC extends BaseClass{
 	public void user_click_estimate_shipping() {
 		button(page.getCartPage().getEstimate_shipping());
 		logger.info("Estimate shipping button clicked");
+		Hooks.test.pass("Estimate shipping button clicked");
 	}
 
 	@Then("User should verify the product total price")
@@ -309,18 +332,21 @@ public class End_to_End_TC extends BaseClass{
 		Assert.assertEquals(expectedShipping,actualShipping);
 		Assert.assertEquals(expectedTotal,actualTotal);
 		logger.info("Verified the product total price");
+		Hooks.test.info("Verified the product total price");
 	}
 
 	@Then("User accept terms of service")
 	public void user_accept_terms_of_service() {
 		button(page.getCartPage().getTerms());
 		logger.info("Terms services clicked");
+		Hooks.test.info("Terms services clicked");
 	}
 
 	@Then("User click checkout button")
 	public void user_click_checkout_button() {
 		button(page.getCartPage().getCheckout());
 		logger.info("Checkout button clicked");
+		Hooks.test.info("Checkout button clicked");
 	}
 
 	@Given("User navigate to checkout page")
@@ -328,6 +354,7 @@ public class End_to_End_TC extends BaseClass{
 		if(page.getCheckoutPage().getCheckout_head().getText()!=null) {
 			Assert.assertTrue(true);
 			logger.info("User navigated to checkout page");
+			Hooks.test.pass("User navigated to checkout page");
 		}else {
 			logger.error("User unable to navigate to checkout page");
 			Assert.assertTrue(false);
@@ -340,95 +367,96 @@ public class End_to_End_TC extends BaseClass{
 		//int cols = ex.getCellcount(path, 0, 1);
 		//for(int i=1;i<=rows;i++) {
 		int i = 1;
-			fname = ex.getCelldata(path, 0, i, 0);
-			lname = ex.getCelldata(path, 0, i, 1);
-			email = ex.getCelldata(path, 0, i, 2);
-			company = ex.getCelldata(path, 0, i, 3);
-			country = ex.getCelldata(path, 0, i, 4);
-			state = ex.getCelldata(path, 0, i, 5);
-			city = ex.getCelldata(path, 0, i, 6);
-			address1 = ex.getCelldata(path, 0, i, 7);
-			address2 = ex.getCelldata(path, 0, i, 8);
-			zip = ex.getCelldata(path, 0, i, 9);
-			phone = ex.getCelldata(path, 0, i, 10);
-			fax = ex.getCelldata(path, 0, i, 11);
+		fname = ex.getCelldata(path, 0, i, 0);
+		lname = ex.getCelldata(path, 0, i, 1);
+		email = ex.getCelldata(path, 0, i, 2);
+		company = ex.getCelldata(path, 0, i, 3);
+		country = ex.getCelldata(path, 0, i, 4);
+		state = ex.getCelldata(path, 0, i, 5);
+		city = ex.getCelldata(path, 0, i, 6);
+		address1 = ex.getCelldata(path, 0, i, 7);
+		address2 = ex.getCelldata(path, 0, i, 8);
+		zip = ex.getCelldata(path, 0, i, 9);
+		phone = ex.getCelldata(path, 0, i, 10);
+		fax = ex.getCelldata(path, 0, i, 11);
 
-			if(page.getCheckoutPage().getBilling_address_head().isDisplayed()) {
-				Assert.assertTrue(true);
-				logger.debug("Entering billing address");
-				if(page.getCheckoutPage().getFirst_name().getAttribute("value").equalsIgnoreCase(fname)) {
-					logger.info("Firstname already fetched");
-				}else {
-					page.getCheckoutPage().getFirst_name().clear();
-					type(page.getCheckoutPage().getFirst_name(), fname.trim());
-					logger.info("Firstname entered");
-				}
-				if(page.getCheckoutPage().getLast_name().getAttribute("value").equalsIgnoreCase(lname)) {
-					logger.info("Lastname already fetched");
-				}else {
-					page.getCheckoutPage().getLast_name().clear();
-					type(page.getCheckoutPage().getLast_name(), lname.trim());
-					logger.info("Lastname entered");
-				}
-				if(page.getCheckoutPage().getEmail_id().getAttribute("value").equalsIgnoreCase(email)) {
-					logger.info("Email already fetched");
-				}else {
-					page.getCheckoutPage().getEmail_id().clear();
-					type(page.getCheckoutPage().getEmail_id(), email.trim());
-					logger.info("Email entered");
-				}
-				if(page.getCheckoutPage().getCompany_name().isEnabled()) {
-					page.getCheckoutPage().getCompany_name().clear();
-				}
-				type(page.getCheckoutPage().getCompany_name(),company.trim());
-				logger.info("Company entered");
-				Select s1 = new Select(page.getCheckoutPage().getCountry());
-				s1.selectByVisibleText(country.trim());
-				logger.info("Country entered");
-				Select s2 = new Select(page.getCheckoutPage().getState());
-				s2.selectByVisibleText(state.trim());
-				logger.info("State entered");
-				if(page.getCheckoutPage().getCity().isEnabled()) {
-					page.getCheckoutPage().getCity().clear();
-				}
-				type(page.getCheckoutPage().getCity(),city.trim());
-				logger.info("City entered");
-				if(page.getCheckoutPage().getAddress_1().isEnabled()) {
-					page.getCheckoutPage().getAddress_1().clear();
-				}
-				type(page.getCheckoutPage().getAddress_1(),address1.trim());
-				logger.info("Address1 entered");
-				if(page.getCheckoutPage().getAddress_2().isEnabled()) {
-					page.getCheckoutPage().getAddress_2().clear();
-				}
-				type(page.getCheckoutPage().getAddress_2(),address2.trim());
-				logger.info("Address2 entered");
-				if(page.getCheckoutPage().getZip().isEnabled()) {
-					page.getCheckoutPage().getZip().clear();
-				}
-				type(page.getCheckoutPage().getZip(),zip.trim());
-				logger.info("Zipcode entered");
-				if(page.getCheckoutPage().getPhone_no().isEnabled()) {
-					page.getCheckoutPage().getPhone_no().clear();
-				}
-				type(page.getCheckoutPage().getPhone_no(),phone.trim());
-				logger.info("Phone no entered");
-				if(page.getCheckoutPage().getFax_no().isEnabled()) {
-					page.getCheckoutPage().getFax_no().clear();
-				}
-				type(page.getCheckoutPage().getFax_no(),fax.trim());
-				logger.info("Fax no entered");
+		if(page.getCheckoutPage().getBilling_address_head().isDisplayed()) {
+			Assert.assertTrue(true);
+			logger.debug("Entering billing address");
+			if(page.getCheckoutPage().getFirst_name().getAttribute("value").equalsIgnoreCase(fname)) {
+				logger.info("Firstname already fetched");
+			}else {
+				page.getCheckoutPage().getFirst_name().clear();
+				type(page.getCheckoutPage().getFirst_name(), fname.trim());
+				logger.info("Firstname entered");
 			}
-			else {
-				logger.error("Billing address failed to entered");
-				Assert.assertTrue(false);
+			if(page.getCheckoutPage().getLast_name().getAttribute("value").equalsIgnoreCase(lname)) {
+				logger.info("Lastname already fetched");
+			}else {
+				page.getCheckoutPage().getLast_name().clear();
+				type(page.getCheckoutPage().getLast_name(), lname.trim());
+				logger.info("Lastname entered");
 			}
+			if(page.getCheckoutPage().getEmail_id().getAttribute("value").equalsIgnoreCase(email)) {
+				logger.info("Email already fetched");
+			}else {
+				page.getCheckoutPage().getEmail_id().clear();
+				type(page.getCheckoutPage().getEmail_id(), email.trim());
+				logger.info("Email entered");
+			}
+			if(page.getCheckoutPage().getCompany_name().isEnabled()) {
+				page.getCheckoutPage().getCompany_name().clear();
+			}
+			type(page.getCheckoutPage().getCompany_name(),company.trim());
+			logger.info("Company entered");
+			Select s1 = new Select(page.getCheckoutPage().getCountry());
+			s1.selectByVisibleText(country.trim());
+			logger.info("Country entered");
+			Select s2 = new Select(page.getCheckoutPage().getState());
+			s2.selectByVisibleText(state.trim());
+			logger.info("State entered");
+			if(page.getCheckoutPage().getCity().isEnabled()) {
+				page.getCheckoutPage().getCity().clear();
+			}
+			type(page.getCheckoutPage().getCity(),city.trim());
+			logger.info("City entered");
+			if(page.getCheckoutPage().getAddress_1().isEnabled()) {
+				page.getCheckoutPage().getAddress_1().clear();
+			}
+			type(page.getCheckoutPage().getAddress_1(),address1.trim());
+			logger.info("Address1 entered");
+			if(page.getCheckoutPage().getAddress_2().isEnabled()) {
+				page.getCheckoutPage().getAddress_2().clear();
+			}
+			type(page.getCheckoutPage().getAddress_2(),address2.trim());
+			logger.info("Address2 entered");
+			if(page.getCheckoutPage().getZip().isEnabled()) {
+				page.getCheckoutPage().getZip().clear();
+			}
+			type(page.getCheckoutPage().getZip(),zip.trim());
+			logger.info("Zipcode entered");
+			if(page.getCheckoutPage().getPhone_no().isEnabled()) {
+				page.getCheckoutPage().getPhone_no().clear();
+			}
+			type(page.getCheckoutPage().getPhone_no(),phone.trim());
+			logger.info("Phone no entered");
+			if(page.getCheckoutPage().getFax_no().isEnabled()) {
+				page.getCheckoutPage().getFax_no().clear();
+			}
+			type(page.getCheckoutPage().getFax_no(),fax.trim());
+			logger.info("Fax no entered");
+		}
+		else {
+			logger.error("Billing address failed to entered");
+			Assert.assertTrue(false);
+		}
 	}
 
 	@Then("User click on billing address continue button")
 	public void user_click_on_billing_address_continue_button() {
 		button(page.getCheckoutPage().getBilling_continue());
 		logger.info("Billing address completed");
+		Hooks.test.pass("Billing address completed");
 	}
 
 	@Then("User select shipping address")
@@ -439,6 +467,7 @@ public class End_to_End_TC extends BaseClass{
 			Select s = new Select(page.getCheckoutPage().getShipping_address());
 			s.selectByIndex(0);
 			logger.debug("Selected billing address as shipping address");
+			Hooks.test.info("Selected billing address as shipping address");
 		}else {
 			logger.error("Shipping address failed to entered");
 			Assert.assertTrue(false);
@@ -449,6 +478,7 @@ public class End_to_End_TC extends BaseClass{
 	public void user_click_shipping_address_continue_button() {
 		button(page.getCheckoutPage().getShipping_address_continue());
 		logger.info("Shipping address completed");
+		Hooks.test.pass("Shipping address completed");
 	}
 
 	@Then("User select shipping method")
@@ -456,8 +486,10 @@ public class End_to_End_TC extends BaseClass{
 		if(page.getCheckoutPage().getShipping_method_head().isDisplayed()) {
 			Assert.assertTrue(true);
 			logger.info("Selecting shipping method");
+			Hooks.test.info("Selecting shipping method");
 			button(page.getCheckoutPage().getSecondnextday_air());
 			logger.debug("Shipping method selected");
+			Hooks.test.info("Shipping method selected");
 		}else {
 			logger.error("Shipping method failed");
 			Assert.assertTrue(false);
@@ -468,6 +500,7 @@ public class End_to_End_TC extends BaseClass{
 	public void user_click_shipping_method_continue_button() {
 		button(page.getCheckoutPage().getShipping_method_continue());
 		logger.info("Shipping method completed");
+		Hooks.test.pass("Shipping method completed");
 	}
 
 	@Then("User click cash on delivery method")
@@ -475,8 +508,10 @@ public class End_to_End_TC extends BaseClass{
 		if(page.getCheckoutPage().getPayment_method_head().isDisplayed()) {
 			Assert.assertTrue(true);
 			logger.info("Selecting payment method");
+			Hooks.test.info("Selecting payment method");
 			button(page.getCheckoutPage().getCashon_delivery());
 			logger.debug("Payment method cash on delivery selected");
+			Hooks.test.info("Payment method cash on delivery selected");
 		}else {
 			logger.error("cash on delivery method failed");
 			Assert.assertTrue(false);
@@ -487,6 +522,7 @@ public class End_to_End_TC extends BaseClass{
 	public void user_click_payment_method_continue_button() {
 		button(page.getCheckoutPage().getPayment_method_continue());
 		logger.info("Payment method completed");
+		Hooks.test.pass("Payment method completed");
 	}
 
 	@Then("User verify payment information for cash on delivery")
@@ -503,6 +539,7 @@ public class End_to_End_TC extends BaseClass{
 				}
 				System.out.println("\n");
 				logger.info("Cash payment information successfully");
+				Hooks.test.pass("Cash payment information successfully");
 			}
 		}else {
 			logger.error("Cash payment information failed");
@@ -514,6 +551,7 @@ public class End_to_End_TC extends BaseClass{
 	public void user_click_payment_information_continue_button() {
 		button(page.getCheckoutPage().getPayment_information_continue());
 		logger.info("Payment information completed");
+		Hooks.test.info("Payment information completed");
 	}
 
 	@Then("User verify the billing and shipping address from confirm order")
@@ -533,6 +571,7 @@ public class End_to_End_TC extends BaseClass{
 			}
 			System.out.println("\n");
 			logger.info("Shipping address captured");
+			Hooks.test.info("Shipping address captured");
 		}else {
 			logger.error("Shipping address failed");
 			Assert.assertTrue(false);
@@ -570,16 +609,18 @@ public class End_to_End_TC extends BaseClass{
 		double expectTotal = total + payment;
 		String expectedTotal = String.valueOf(expectTotal);
 		Assert.assertEquals(expectedSubtotal,actualSubtotal);
-//		Assert.assertEquals(expectedShipping,actualShipping);
+		//		Assert.assertEquals(expectedShipping,actualShipping);
 		Assert.assertEquals(expectedPayment,actualPayment);
 		Assert.assertEquals(expectTotal, actto, 0.001);
 		logger.info("Verified the product total and total price");
+		Hooks.test.info("Verified the product total and total price");
 	}
 
 	@Then("User click confirm order continue button")
 	public void user_click_confirm_order_continue_button() {
 		button(page.getCheckoutPage().getConfirm_order_continue());
 		logger.info("Confirm order completed");
+		Hooks.test.info("Confirm order completed");
 	}
 
 	@Then("User should verify the order success message")
@@ -587,6 +628,7 @@ public class End_to_End_TC extends BaseClass{
 		if(page.getCheckoutPage().getOrdered_successmsg().isDisplayed()) {
 			Assert.assertTrue(true);
 			logger.info("Ordered success");
+			Hooks.test.pass("Ordered success");
 		}else {
 			logger.error("Ordered failed");
 			Assert.assertTrue(false);

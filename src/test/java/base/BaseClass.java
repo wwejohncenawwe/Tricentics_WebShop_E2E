@@ -17,7 +17,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ReadConfig;
 
@@ -29,7 +28,7 @@ public class BaseClass {
 	
 	public  static WebDriver driver;
 	public static Logger logger = null;
-
+	
 	public void launchBrowser() {
 		logger = LogManager.getLogger(BaseClass.class);
 		if(driver == null) {

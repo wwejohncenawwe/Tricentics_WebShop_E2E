@@ -52,6 +52,6 @@ And User click order success continue button
 
 Examples:
 |firstname|lastname|email|password|confirmpassword|status1|status2|
-|abinaya|abinaya|abinaya400@gmail.com|abinaya|abinaya|Your registration completed|abinaya400@gmail.com|
+|abinaya|abinaya|abinaya600@gmail.com|abinaya|abinaya|Your registration completed|abinaya600@gmail.com|
 
 
